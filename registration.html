@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        width: 100%;   
+      background:
+      url('Office.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    
+    .container {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        top: 2%;
+        left: 500px;
+    }
+    
+    .container h1 {
+        font-size: 3rem;
+        color: #0c6f96;
+        margin: 0 0 10px 0;
+    }
+    
+    .container .form-group {
+        margin: 30px 0 30px 0;
+    }
+    
+    .container .form-group label {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #0e0c0c;
+        font-weight: bold;
+    }
+    
+    .container .form-group input {
+        margin: 5px 0;
+        padding-left: 5px;
+        height: 40px;
+        width: 80%;
+        border: 0;
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid #0b0b0b;
+        color: #053345;
+        transition: 0.5s ease;
+    }
+    
+    .container .form-group input:focus {
+        border-bottom: 2px solid #0c6f96;
+    }
+    
+    ::placeholder {
+        color:#083243;
+    }
+    
+    .container a {
+        color: #0c6f96;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .container button {
+        margin: 20px 0;
+        padding: 10px 40px;
+        display: inline-block;
+        border: 0;
+        outline: none;
+        background: linear-gradient(to left, #0c6f96, #fff);
+        font-size: 18px;
+        color: #111;
+        font-weight: 400;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    
+    .container button:hover {
+        background: linear-gradient(to right, #0c6f96, #fff);
+    }
+    
+    @media (max-width:600px) {
+        .container {
+            left: 0px;
+            padding: 50px;
+        }
+    }
+    </style>
+    <title>Register First</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign up</h1>
+        
+        <form action="registrationServlet">
+        <div class="form-group">
+            <label>Name</label> <br>
+            <input type="text" placeholder="Enter Name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label> <br>
+            <input type="email" placeholder="Enter Email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Username</label> <br>
+            <input type="text" placeholder="Enter username" name="username" required >
+        </div>
+
+        <div class="form-group">
+            <label>Mobile no.</label> <br>
+            <input type="text" placeholder="Enter mobile" name="mobile" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label> <br>
+            <input type="password" placeholder="Enter password" name="password" required>
+        </div>
+        <a href="Login.html">Already have an account?</a> <br>
+        <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

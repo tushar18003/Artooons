@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        width: 100%;   
+      background:
+      url('imagesssss.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    
+    .container {
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        top: 20%;
+        left: 150px;
+    }
+    
+    .container h1 {
+        font-size: 3rem;
+        color: white;
+        margin: 0 0 10px 0;
+    }
+    
+    .container .form-group {
+        margin: 30px 0 30px 0;
+    }
+    
+    .container .form-group label {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color:  white;
+    }
+    
+    .container .form-group input {
+        margin: 5px 0;
+        padding-left: 5px;
+        height: 40px;
+        width: 80%;
+        border: 0;
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid #050404;
+        color: white;
+        transition: 0.5s ease;
+    }
+    
+    .container .form-group input:focus {
+        border-bottom: 2px solid #0c6f96;
+    }
+    
+    ::placeholder {
+        color:  white;
+    }
+    
+    .container a {
+        color:white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .container button {
+        margin: 20px 0;
+        padding: 10px 40px;
+        display: inline-block;
+        border: 0;
+        outline: none;
+        background: linear-gradient(to left, #0c6f96, #fff);
+        font-size: 18px;
+        color: #111;
+        font-weight: 400;
+        cursor: pointer;
+        transition: 0.5s ease;
+        
+
+    }
+    
+    .container button:hover {
+        background: linear-gradient(to right, #0c6f96, #fff);
+    }
+    
+    @media (max-width:600px) {
+        .container {
+            left: 0px;
+            padding: 50px;
+        }
+    }
+    </style>
+    <title>Log in !!!</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        
+        <h1>Login Page</h1>
+        
+        <form action="login">
+        <div class="form-group">
+            <label>Username</label> <br>
+            <input type="text" name="username" placeholder="Enter Username...." required="">  
+        </div>
+        <div class="form-group">
+            <label>Password</label> <br>
+            <input type="password" name="password" placeholder="Enter Password..." required="">
+        </div>
+        <a href="registration.html">Don't have an account? create one.</a> <br>
+        <button type="submit">Login</button>
+        
+           </form>
+
+    </div>
+
+</body>
+</html>
+
